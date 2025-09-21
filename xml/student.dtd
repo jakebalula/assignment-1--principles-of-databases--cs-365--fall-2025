@@ -1,0 +1,40 @@
+<!--Root element containing one or more student elements-->
+<!ELEMENT students (student+)>
+
+<!--Define the structure of a student element-->
+<!--middleName, preferredName, and minor are all optional-->
+<!ELEMENT student (
+  firstName,
+  middleName?,
+  lastName,
+  preferredName?,
+  email,
+  phone,
+  academicStatus,
+  GPA,
+  major,
+  minor?,
+  enrollmentStatus,
+  advisor,
+  dateOfEnrollment,
+  expectedGraduationDate
+)>
+
+<!--Define each element as containing parsed character data-->
+<!ELEMENT firstName (#PCDATA)>
+<!ELEMENT middleName (#PCDATA)>
+<!ELEMENT lastName (#PCDATA)>
+<!ELEMENT preferredName (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT phone (#PCDATA)>
+<!ELEMENT academicStatus (#PCDATA)>
+<!ELEMENT GPA (#PCDATA)>
+<!ELEMENT major (#PCDATA)>
+<!ELEMENT minor (#PCDATA)>
+<!ELEMENT enrollmentStatus (#PCDATA)>
+<!ELEMENT advisor (#PCDATA)>
+<!ELEMENT dateOfEnrollment (#PCDATA)>
+<!ELEMENT expectedGraduationDate (#PCDATA)>
+
+<!--All students must have a unique ID attribute-->
+<!ATTLIST student id ID #REQUIRED>
