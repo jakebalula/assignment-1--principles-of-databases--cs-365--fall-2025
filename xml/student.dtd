@@ -37,4 +37,4 @@
 <!ELEMENT expectedGraduationDate (#PCDATA)>
 
 <!--All students must have a unique ID attribute-->
-<!ATTLIST student id ID #REQUIRED>
+<!ATTLIST student id CDATA #REQUIRED>
