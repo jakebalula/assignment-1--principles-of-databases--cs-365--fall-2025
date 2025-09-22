@@ -13,7 +13,7 @@ student::before{
   margin-bottom: 5px;
 }
 
-firstName, lastName, GPA{
+firstName, lastName, GPA, email, phone, academicStatus, major, minor, advisor, dateOfEnrollment, graduationDate{
   display: block;
-  margin-left: 10px;
+  margin-left: auto;
 }

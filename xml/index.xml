@@ -5,7 +5,7 @@
   <student id = "1234567">
     <firstName>Gordon</firstName>
     <middleName>Matthew</middleName>
-    <lastName>Summer</lastName>
+    <lastName>Sumner</lastName>
     <preferredName>Sting</preferredName>
     <email>sting@thepolice.com</email>
     <phone>212.123.4567</phone>
